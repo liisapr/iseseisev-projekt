@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liisa Proode </title>
+    <script src="scripts/jquery-2.2.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="scripts/functions.js"></script>
+    <!---
+    *    Title: BS4 - One Page Navigation
+    *    Author: Christian Reyinfante
+    *    Date: 2019
+    *    Availability: https://codepen.io/chryss/
+    -->
+</head>
+<body>
+    <div class="container-fluid">
+        <main class="row">
+            <nav class="navbar navbar-expand-md fixed-top bg-white shadow-sm">
+                <div class="container">
+                    <a class="navbar-brand bg-color" href="#">L.P</a>
+                    <button class="navbar-toggler collapsed text-primary" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars bg-color" aria-hidden="true"></i>
+                    </button>
+                    <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                        <ul class="navbar-nav small">
+                            <li class="nav-item font-weight-light text-uppercase">
+                                <a class="nav-link bg-color" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item font-weight-light text-uppercase">
+                                <a class="nav-link bg-color" href="#about">About</a>
+                            </li>
+                            <li class="nav-item font-weight-light text-uppercase">
+                                <a class="nav-link bg-color" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item font-weight-light text-uppercase">
+                                <a class="nav-link bg-color" href="#cards">My work</a>
+                            </li>
+                            <li class="nav-item font-weight-light text-uppercase">
+                                <a class="nav-link bg-color" href="#socials">Socials</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="home" class="container-fluid parallax vh-100 accent-bg" style="background-image:url('pics/bg.jpg')">
+                <div class="h-100 w-100 d-flex align-items-center">
+                    <div class="container text-center z-index-1">
+                        <h1 class="display-3 text-color">LIISA PROODE</h1>
+                    </div>
+                    <div class="bg-overlay bg-primary"></div>
+                </div>
+            </div>
+
+            <div id="about" class="container-fluid bg-light" style="padding-top: 20px;">
+                <div class="row">
+                    <div class="container">
+                        <div class="row text-center">
+                            <h2 class="h2 pt-5 mt-1 mb-1 w-100 text-uppercase">about</h2>
+                        </div>
+                        <hr class="hr col-7">
+                        <div class="row text-justify mt-1 mb-5 small">
+                            <div class="col-7 m-auto">
+                                <img src="pics/liisa.jpg" alt="Picture of me" class="rounded-circle float-left small-image">
+                                <p>I am Liisa Proode from Estonia. I'm working towards a Bachelor of Science degree in Informatics at Tallinn University.
+                                  <br> My passion is art and design. I would love to work as UX or UI designer.
+                                  <br> I have self-taught myself Photoshop and Adobe XD. I discovered ps for myself at a pretty young age and it has been in my life ever since.
+                                  <br> Photo editing is my another hobby. I edit my own photos, but also my friends. I also manage restaurants social media, where I create the pictures and edit them.
+                                  <br> I have also had a chance to try video color correcting in Adobe Premier thanks to my husband. He edits the videos and I color correct.
+                                  <br> Long story short I love anything that is related to design and colors.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skills" class="container-fluid bg-light" style="padding-top: 20px;">
+                <div class="row">
+                    <div class="container">
+                        <div class="row text-center">
+                            <h2 class="h2 pt-5 mt-1 mb-1 w-100 text-uppercase">skills</h2>
+                        </div>
+                        <hr class="hr col-7">
+                        <div class="row text-justify mt-1 mb-5 small">
+                            <div class="col-7 m-auto">
+                                <div class="wrapper">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="skillbar" data-percent="65%">
+                                                    <div class="skillbar-title">Photoshop & Adobe XD</div>
+                                                    <div class="skill-bar-percent">65%</div>
+                                                    <div class="skillbar-bar" style="width: 65%;"></div>
+                                                </div>
+
+                                                <div class="skillbar" data-percent="75%">
+                                                    <div class="skillbar-title">Photo editing</div>
+                                                    <div class="skill-bar-percent">75%</div>
+                                                    <div class="skillbar-bar" style="width: 75%;"></div>
+                                                </div>
+
+                                                <div class="skillbar" data-percent="65%">
+                                                    <div class="skillbar-title">ux/ui design </div>
+                                                    <div class="skill-bar-percent">65%</div>
+                                                    <div class="skillbar-bar" style="width: 65%;"></div>
+                                                </div>
+
+                                                <div class="skillbar" data-percent="80%">
+                                                    <div class="skillbar-title">video color correcting</div>
+                                                    <div class="skill-bar-percent">80%</div>
+                                                    <div class="skillbar-bar" style="width: 80%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cards" class="container-fluid bg-light" style="padding-top: 20px;">
+                <div class="row">
+                    <div class="container">
+                        <div class="row text-center">
+                            <h2 class="h2 pt-5 mt-1 mb-1 w-100 text-uppercase">my work</h2>
+                        </div>
+                        <hr class="hr col-7">
+                        <div class="row text-justify mt-1 mb-5 small">
+                            <div class="col-7 m-auto text-center">
+                                    <img src="pics/d2n.png" class="img-fluid"><br><br>
+                                    <img src="pics/kohvik.png" class="img-fluid"><br><br>
+                                    <img src="pics/photoediting.png" class="img-fluid"><br><br>
+                                    <img src="pics/põhjapeipsi.png" class="img-fluid"><br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="socials" class="container-fluid bg-light socials" style="padding-top: 20px;">
+                <div class="row">
+                    <div class="container mb-5 mt-5">
+                        <div class="row text-center">
+                            <h2 class="h2 pt-4 mb-1 w-100 text-uppercase">socials</h2>
+                        </div>
+                        <hr class="hr col-7">
+                        <div class="row mt-4 mb-4">
+                            <div class="col-3 m-auto d-flex justify-content-around h1 text-info">
+                                <a href="https://www.facebook.com/liisa.proode">
+                                    <i class="fa fa-facebook-square" style="color:#4AD0D2;" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/liisapr" class="ml-3 mr-3">
+                                    <i class="fa fa-github" style="color:#4AD0D2;" aria-hidden="true"></i>
+                                </a>
+                                <a href="mailto:lizjako@tlu.ee">
+                                    <i class="fa fa-envelope" style="color:#4AD0D2;" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="back-to-top  text-white text-center shadow-sm bg-color-g">
+                <i class="fa fa-chevron-up"></i>
+            </span>
+
+        </main>
+    </div>
+    <footer>
+        <div class="container-fluid" style="background-color: #313131;">
+            <div class="w-100">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="mt-5 mb-5 small text-white text-uppercase">Tallinna Ülikool 2019</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
