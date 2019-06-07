@@ -41,6 +41,9 @@
                                 <a class="nav-link bg-color" href="#cards">My work</a>
                             </li>
                             <li class="nav-item font-weight-light text-uppercase">
+                                <a class="nav-link bg-color" href="#game">Snake game</a>
+                            </li>
+                            <li class="nav-item font-weight-light text-uppercase">
                                 <a class="nav-link bg-color" href="#socials">Socials</a>
                             </li>
                         </ul>
@@ -67,7 +70,7 @@
                         <div class="row text-justify mt-1 mb-5 small">
                             <div class="col-7 m-auto">
                                 <img src="pics/liisa.jpg" alt="Picture of me" class="rounded-circle float-left small-image">
-                                <p>I am Liisa Proode from Estonia. I'm working towards a Bachelor of Science degree in Informatics at Tallinn University.
+                                  <p>I am Liisa Proode from Estonia. I'm working towards a Bachelor of Science degree in Informatics at Tallinn University.
                                   <br> My passion is art and design. I would love to work as UX or UI designer.
                                   <br> I have self-taught myself Photoshop and Adobe XD. I discovered ps for myself at a pretty young age and it has been in my life ever since.
                                   <br> Photo editing is my another hobby. I edit my own photos, but also my friends. I also manage restaurants social media, where I create the pictures and edit them.
@@ -132,18 +135,56 @@
                             <h2 class="h2 pt-5 mt-1 mb-1 w-100 text-uppercase">my work</h2>
                         </div>
                         <hr class="hr col-7">
-                        <div class="row text-justify mt-1 mb-5 small">
-                            <div class="col-7 m-auto text-center">
-                                    <img src="pics/d2n.png" class="img-fluid"><br><br>
-                                    <img src="pics/kohvik.png" class="img-fluid"><br><br>
-                                    <img src="pics/photoediting.png" class="img-fluid"><br><br>
-                                    <img src="pics/põhjapeipsi.png" class="img-fluid"><br><br>
+                        <div class="game">
+                            <div id="carousel" class="carousel">
+                                <div class="slides">
+                                    <div class="slide" data-state="active">
+                                        <img src="pics/d2n.png">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="pics/kohvik.PNG">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="pics/photoediting.png">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="pics/põhjapeipsi.png">
+                                    </div>
+                                </div>
+                                <div class="indicators btn-group btn-group-toggle">
+                                    <label class="btn btn-secondary">
+                                        <input class="indicator" name="indicator" data-slide="1" data-state="active" checked type="radio" />D2N
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input class="indicator" name="indicator" data-slide="2" type="radio" />CoffeeHolic
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input class="indicator" name="indicator" data-slide="3" type="radio" />Photo editing
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input class="indicator" name="indicator" data-slide="4" type="radio" />Põhja-peipsi
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div id="game" class="container-fluid bg-light" style="padding-top: 20px;">
+                <div class="row">
+                    <div class="container">
+                        <div class="row text-center">
+                            <h2 class="h2 pt-5 mt-1 mb-1 w-100 text-uppercase">Snake game</h2>
+                            <hr class="hr col-7">
+                        </div>
+                        <div class="game">
+                            <p>Use the arrow keys to play :)</p>
+                            <canvas id="stage" height="400" width="520"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div id="socials" class="container-fluid bg-light socials" style="padding-top: 20px;">
                 <div class="row">
